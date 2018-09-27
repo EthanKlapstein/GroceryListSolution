@@ -40,6 +40,10 @@ namespace GroceryList.Data.Entities
         [StringLength(12)]
         public string Phone { get; set; }
 
+        public string FullName { get { return $"{LastName}, {FirstName}"; } }
+
+        public string CityCustomer { get { return $"{City}: {FullName}"; } }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }
     }

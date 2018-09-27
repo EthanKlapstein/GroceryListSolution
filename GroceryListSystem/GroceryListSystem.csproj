@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\CategoryController.cs" />
+    <Compile Include="BLL\ProductController.cs" />
     <Compile Include="DAL\GroceryListContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,9 +56,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\GroceryList.Data\GroceryList.Data.csproj">
       <Project>{fcb95769-cb13-4db9-be61-8737aa827adc}</Project>

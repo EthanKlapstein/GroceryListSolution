@@ -36,6 +36,8 @@ namespace GroceryList.Data.Entities
 
         public virtual Category Category { get; set; }
 
+        public string DescriptionUnitSize { get { return $"{Description} ({UnitSize})"; } }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderList> OrderLists { get; set; }
     }

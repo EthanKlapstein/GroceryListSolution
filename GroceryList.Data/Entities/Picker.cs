@@ -23,5 +23,7 @@ namespace GroceryList.Data.Entities
         public int StoreID { get; set; }
 
         public virtual Store Store { get; set; }
+
+        public string FullName { get { return $"{LastName}, {FirstName}"; } }
     }
 }

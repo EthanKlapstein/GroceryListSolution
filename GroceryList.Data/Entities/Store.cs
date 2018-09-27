@@ -37,6 +37,8 @@ namespace GroceryList.Data.Entities
         [StringLength(12)]
         public string Phone { get; set; }
 
+        public string CityLocation { get { return $"{City}: {Location}"; } }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }
 
