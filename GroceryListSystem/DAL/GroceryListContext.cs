@@ -1,8 +1,6 @@
 //using System;
 using GroceryList.Data.Entities;
 using System.Data.Entity;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
 
 namespace GroceryList.Data.DAL
 {

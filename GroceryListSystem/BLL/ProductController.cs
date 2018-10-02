@@ -23,7 +23,10 @@ namespace GroceryListSystem.BLL
         {
             using (var context = new GroceryListContext())
             {
-                var results;
+                var results = from product in context.Products
+                              where product.CategoryID.Equals(categoryid)
+                              select product;
+                              
                 return results.ToList();
             }
         }
