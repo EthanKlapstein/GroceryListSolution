@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApp.WebPages
 {
-    public partial class Products : System.Web.UI.Page
+    public partial class ProductODS : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

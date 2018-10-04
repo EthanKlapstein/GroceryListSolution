@@ -1,10 +1,10 @@
-//using System;
+﻿//using System;
 using GroceryList.Data.Entities;
 using System.Data.Entity;
 
-namespace GroceryList.Data.DAL
-{
 
+namespace GroceryListSystem.DAL
+{
     public partial class GroceryListContext : DbContext
     {
         public GroceryListContext() : base("name=GroceryListDB")
